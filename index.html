@@ -1,0 +1,114 @@
+
+<!doctype html>
+<html>
+<head>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <h1>Hello World</h1>
+            <button onclick="GET()"> Get one data</button>
+            <button onclick="GetAll()"> Get All data</button>
+            <button onclick="Post()"> Post data</button>
+            <button onclick="Delete()"> Delete data</button>
+        </div>
+
+    </div>
+
+    <script>
+        var _url = "http://localhost:5230/Person";
+
+        // ToDo: Get one
+        function GET()
+        {
+            
+            $.ajax({
+                url: _url,
+                type: "Get",
+                dataType: "Json",
+                success: function(data){
+                    console.log(data);
+                }
+            })
+        }
+
+        // ToDo: Get All
+        function GetAll()
+        {
+            $.ajax({
+                url: _url+"/GetAll",
+                type: "Get",
+                dataType: "Json",
+                success: function(data){
+                    console.log(data);
+                },
+                error: function()
+                {
+                    console.log("error aqured")
+                }
+            })
+        }
+
+        // ToDo: Add new item
+        function Post()
+        {
+            var formData = new FormData();
+            formData.append("name", "Muhammad");
+            formData.append("family", "Ganji Nezhad");
+            formData.append("age", "27");
+            
+            $.ajax({
+               type: 'POST',
+               url: _url+"/Create",
+               contentType: false, 
+               processData: false,
+               cache: false,
+               cache: false,
+               data: formData,
+               success: function () {
+                   console.log("successfully send")
+               },
+               error: function(){
+                   console.log("error aqured")
+               }
+            })
+        }
+
+        // ToDo: Delete by name
+        function Delete()
+        {
+            var formName = new FormData();
+            formName.append("name","Muhammad");
+
+            $.ajax({
+                    type: 'DELETE',
+                    url: _url+"/DeletePerson",
+                    contentType: false,
+                    processData: false,
+                    cache: false,
+                    data: formName,
+                    success: function () {
+                    console.log("successfully delete")
+                },
+                error: function(){
+                    console.log("error aqured")
+                }
+                })
+        }
+
+        function readyDOM() {
+
+        }
+
+        // ToDo: when DOM became ready do this function
+       $(document).ready(readyDOM())
+    </script>
+
+</body>
+
+</html>
