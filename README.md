@@ -32,6 +32,7 @@ Ajax query with local API server in asp.net core 7
 * [asp.net core 7](https://learn.microsoft.com/en-us/aspnet/core/introduction-to-aspnet-core?view=aspnetcore-7.0)
 * [JQuery Ajax](https://learn.jquery.com/ajax/)
 * [html](https://www.w3schools.com/html/)
+* [java script](https://www.w3schools.com/js/)
 
 ## Getting Started
 1. ابتدا پروژه سرور محلی را با ویژوال استدیو اجرا کنید. (ترجیحا نسخه ی بروز 2022)
