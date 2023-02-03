@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "bRyv4rmWBbSdN55ilaJjRBN9tfHJkLPk5l9HjMYEgic=",
+  "Source": "WebApplication4",
+  "BasePath": "_content/WebApplication4",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "WebApplication4\\wwwroot",
+      "Source": "WebApplication4",
+      "ContentRoot": "C:\\Users\\Lion\\source\\repos\\WebApplication4\\WebApplication4\\wwwroot\\",
+      "BasePath": "_content/WebApplication4",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}
