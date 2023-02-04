@@ -1,5 +1,5 @@
 # Ajax Basic
-Ajax query with local API server in asp.net core 7 
+Ajax query with local API server in asp.net core 7
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
@@ -28,7 +28,8 @@ Ajax query with local API server in asp.net core 7
 ![product-screenshot](https://github.com/lpln25/ajax-basic/blob/main/page-1.jpg) <br/> *نمای خروجی از سرور محلی و دستورات ایجکس*
 
 ### Built With
-با تکنولوژی asp.net core 7 سرور محلی پیاده سازی و با یک صفحه ساده html دستورات ایجکس از کتابخانه جی کوئری فراخوانی می شود. پیش نیازهای مورد نیاز:
+با تکنولوژی asp.net core 7 سرور محلی می‌سازیم و در یک صفحه html جداگانه دستورات اتصال به API مینویسیم.
+برای کار با API موجود در سرور محلی از دستورات Ajax استفاده میکنیم.
 * [asp.net core 7](https://learn.microsoft.com/en-us/aspnet/core/introduction-to-aspnet-core?view=aspnetcore-7.0)
 * [JQuery Ajax](https://learn.jquery.com/ajax/)
 * [html](https://www.w3schools.com/html/)
